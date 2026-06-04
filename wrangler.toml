@@ -1,0 +1,20 @@
+name = "llchat"
+main = "worker/worker.js"
+
+[build]
+command = ""
+
+[env]
+# 在 Cloudflare 上部署前需要在此处或在控制台绑定 KV 命名空间
+
+[vars]
+
+[kv_namespaces]
+bindings = [
+  { binding = "USERS", id = "" },
+  { binding = "NICKMAP", id = "" },
+  { binding = "IPMAP", id = "" },
+  { binding = "SESSIONS", id = "" },
+  { binding = "CHATS", id = "" },
+  { binding = "MESSAGES", id = "" }
+]

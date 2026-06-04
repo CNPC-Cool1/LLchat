@@ -1,0 +1,40 @@
+/* 蓝白渐变配方，字体微软雅黑 */
+:root{
+  --bg1: #e6f0ff;
+  --bg2: #ffffff;
+  --accent: #0066cc;
+  --font: "Microsoft Yahei", "微软雅黑", Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  padding:0;
+  font-family:var(--font);
+  background:linear-gradient(180deg,var(--bg1),var(--bg2));
+  color:#033;
+}
+.container{
+  max-width:900px;
+  margin:40px auto;
+  background:rgba(255,255,255,0.8);
+  padding:20px;
+  border-radius:8px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.08);
+}
+h1{color:var(--accent);}
+.buttons{display:flex;gap:12px}
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  background:linear-gradient(180deg,#3da0ff,#0066cc);
+  color:white;text-decoration:none;border-radius:6px
+}
+.msg{color:#a00}
+.top{display:flex;justify-content:space-between;align-items:center}
+.create-chat, .chat-list, .messages{margin-top:16px}
+.messages-box{height:300px;overflow:auto;border:1px solid #e0e8ff;padding:8px;border-radius:6px;background:linear-gradient(180deg,#fff,#f6fbff)}
+.message{padding:6px 8px;border-radius:6px;margin-bottom:6px;background:#eef6ff}
+.send{display:flex;gap:8px;margin-top:8px}
+input{padding:8px;border:1px solid #d6e6ff;border-radius:4px;width:100%}
+button{padding:8px 12px;border-radius:4px;border:0;background:#0077dd;color:#fff}
+.note{margin-top:12px;color:#666}
